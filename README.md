@@ -1,6 +1,78 @@
-# TiendaCarioca
+# FULLSTACK II SEMANA 4 CATALOGO JUEGOS DE MESA VERSIÓN ANGULAR
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.15.
+<p align="center">
+  <img src="img/logo_carioca.png" alt="Logo" width="250">
+</p>
+
+<div style="text-align:center;">
+  Somos una tienda especializada en juegos de mesa. ¡Bienvenidos a nuestro repositorio!
+</div>
+
+## Descripción de la Actividad
+En esta cuarta semana realizarán la actividad individual formativa 3, llamada "Integrando un framework a nuestro FrontEnd". La actividad consta de un encargo que implica transferir el producto que crearon en la actividad formativa 2 (semana 2), el cual fue generado utilizando los lenguajes HTML, CSS, Bootstrap, a la nueva estructura de Angular.
+
+## Objetivos
+
+1.	Se debe crear un proyecto nuevo en Angular y ejecutar las instrucciones y configuraciones para crear tanto componentes como HTML tenga la aplicación anterior.
+2.	Deben hacer el ajuste de todos sus HTML en este nuevo formato, así como también el CSS para seguir dando diseño.
+3.	Realizar la adecuación para que el proyecto reconozca Bootstrap en nuestras páginas.
+4.	Seguir manipulando los formularios, pero incluyendo el manejo de las directivas, adaptando nuestra interfaz a datos estáticos mediante el uso de variables en el ts (esto incluye ngIf,ngFor y ngModel).
+5.	Pasar datos de una página a otra para que la interfaz se ajuste de manera dinámica y eliminar aquellos HTML que se pueden crear a partir de uno solo estándar, mostrando los datos de manera dinámica. Ejemplo: al entrar en un producto, que el HTML reciba los datos del producto y los muestre. Así evitamos crear un HTML para cada producto.
+6.	No incluir las validaciones ni los JS de los formularios.
+
+## Nombre de la Tienda
+- Tienda Carioca, somos juegos de mesa
+
+## Categorías
+- Estrategia
+- Familiares
+- Party Games
+- Cooperativos
+
+## Catálogo
+
+### Estrategia
+
+- Catan
+- Risk
+- Ticket to Ride
+- Splendor
+
+### Familiares
+
+- Monopoly
+- Scrabble
+- Clue
+- Uno
+
+### Party Games
+
+- Taboo
+- Charades
+- Exploding Kittens
+
+### Cooperativos
+
+- Pandemic
+- Flash Point
+- Forbidden Island
+
+## Stack Utilizado
+- HTML
+- Javascript
+- Css
+- Logo Adobe
+- Visual Studio Code
+- Extenciones Live Preview Microsoft
+- Bootstrap 5.3
+
+## Git y Trello
+- Los links relacionados se comparten en AVA
+
+## Conclusiones
+El ejercicio cumple satisfactoriamente con los objetivos planteados.
+
+
 
 ## Development server
 

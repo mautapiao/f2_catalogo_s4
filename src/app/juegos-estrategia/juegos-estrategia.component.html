@@ -1,56 +1,16 @@
 <h2 class="categoria-titulo">Juegos de Estrategia</h2>
 <div class="juego-grid">
-    <div class="juego-card">
-        <div class="juego-image"><img src="img/catan.png" alt="Catan game"></div>
-        <div class="juego-info">
-            <h3 class="juego-titulo">Catan</h3>
-            <p class="juego-descripcion">El clásico juego de construcción y comercio donde debes
-                colonizar la isla de Catan.</p>
-            <div class="juego-precio">
-                <span class="precio-actual">$45.100</span>
-                <span class="precio-original">$55.000</span>
-                <span class="descuento-badge">-18%</span>
-            </div>
-        </div>
-    </div>
+    
+ <div class="col" *ngFor="let juego of juegos">
+    <app-card-juego
+      [titulo]="juego.titulo"
+      [descripcion]="juego.descripcion"
+      [imagen]="juego.imagen"
+      [precioActual]="juego.precioActual"
+      [precioOriginal]="juego.precioOriginal"
+      [descuento]="juego.descuento">
+    </app-card-juego>
 
-    <div class="juego-card">
-        <div class="juego-image"><img src="img/risk.png" alt="Risk game"></div>
-        <div class="juego-info">
-            <h3 class="juego-titulo">Risk</h3>
-            <p class="juego-descripcion">Conquista el mundo en este épico juego de estrategia militar y
-                diplomacia.</p>
-            <div class="juego-precio">
-                <span class="precio-actual">$38.000</span>
-                <span class="sin-descuento">Sin descuento</span>
-            </div>
-        </div>
-    </div>
+</div>
 
-    <div class="juego-card">
-        <div class="juego-image"><img src="img/ride.png" alt="Ride game"></div>
-        <div class="juego-info">
-            <h3 class="juego-titulo">Ticket to Ride</h3>
-            <p class="juego-descripcion">Construye rutas ferroviarias a través de América del Norte en
-                esta aventura sobre rieles.</p>
-            <div class="juego-precio">
-                <span class="precio-actual">$42.000</span>
-                <span class="precio-original">$50.000</span>
-                <span class="descuento-badge">-16%</span>
-            </div>
-        </div>
-    </div>
-
-    <div class="juego-card">
-        <div class="juego-image"><img src="img/splendor.png" alt="Splenddor game"></div>
-        <div class="juego-info">
-            <h3 class="juego-titulo">Splendor</h3>
-            <p class="juego-descripcion">Conviértete en un próspero comerciante de gemas en el
-                Renacimiento.</p>
-            <div class="juego-precio">
-                <span class="precio-actual">$35.000</span>
-                <span class="sin-descuento">Sin descuento</span>
-            </div>
-        </div>
-    </div>
 </div>

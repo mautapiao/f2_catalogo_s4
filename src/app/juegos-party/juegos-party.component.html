@@ -1,43 +1,15 @@
 <h2 class="categoria-titulo">Party Games</h2>
 <div class="juego-grid">
-    <div class="juego-card">
-        <div class="juego-image"><img src="img/taboo.png" alt="Taboo game"></div>
-        <div class="juego-info">
-            <h3 class="juego-titulo">Taboo</h3>
-            <p class="juego-descripcion">Haz que tu equipo adivine la palabra sin decir las palabras
-                prohibidas.</p>
-            <div class="juego-precio">
-                <span class="precio-actual">$24.960</span>
-                <span class="precio-original">$32.000</span>
-                <span class="descuento-badge">-22%</span>
-            </div>
-        </div>
-    </div>
+    
+<div class="col" *ngFor="let juego of juegos">
+    <app-card-juego
+      [titulo]="juego.titulo"
+      [descripcion]="juego.descripcion"
+      [imagen]="juego.imagen"
+      [precioActual]="juego.precioActual"
+      [precioOriginal]="juego.precioOriginal"
+      [descuento]="juego.descuento">
+    </app-card-juego>
 
-    <div class="juego-card">
-        <div class="juego-image"><img src="img/charades.png" alt="Charades game"></div>
-        <div class="juego-info">
-            <h3 class="juego-titulo">Charades</h3>
-            <p class="juego-descripcion">Actúa sin hablar y divierte a todos con tus mejores
-                interpretaciones.</p>
-            <div class="juego-precio">
-                <span class="precio-actual">$20.000</span>
-                <span class="sin-descuento">Sin descuento</span>
-            </div>
-        </div>
-    </div>
-
-    <div class="juego-card">
-        <div class="juego-image"><img src="img/exploding.png" alt="Exploding game"></div>
-        <div class="juego-info">
-            <h3 class="juego-titulo">Exploding Kittens</h3>
-            <p class="juego-descripcion">Un juego de cartas lleno de gatitos, explosiones y láser
-                ocasional.</p>
-            <div class="juego-precio">
-                <span class="precio-actual">$22.120</span>
-                <span class="precio-original">$28.000</span>
-                <span class="descuento-badge">-21%</span>
-            </div>
-        </div>
     </div>
 </div>

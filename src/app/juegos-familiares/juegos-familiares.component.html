@@ -1,56 +1,15 @@
 <h2 class="categoria-titulo">Juegos Familiares</h2>
 <div class="juego-grid">
-    <div class="juego-card">
-        <div class="juego-image"><img src="img/monopoly.png" alt="Monopoly game"></div>
-        <div class="juego-info">
-            <h3 class="juego-titulo">Monopoly</h3>
-            <p class="juego-descripcion">El clásico juego de bienes raíces que ha unido familias por
-                generaciones.</p>
-            <div class="juego-precio">
-                <span class="precio-actual">$28.000</span>
-                <span class="precio-original">$35.000</span>
-                <span class="descuento-badge">-20%</span>
-            </div>
-        </div>
-    </div>
+    
+<div class="col" *ngFor="let juego of juegos">
+    <app-card-juego
+      [titulo]="juego.titulo"
+      [descripcion]="juego.descripcion"
+      [imagen]="juego.imagen"
+      [precioActual]="juego.precioActual"
+      [precioOriginal]="juego.precioOriginal"
+      [descuento]="juego.descuento">
+    </app-card-juego>
 
-    <div class="juego-card">
-        <div class="juego-image"><img src="img/scrabble.png" alt="Scrabble game"></div>
-        <div class="juego-info">
-            <h3 class="juego-titulo">Scrabble</h3>
-            <p class="juego-descripcion">Forma palabras y desarrolla tu vocabulario en este juego
-                educativo y divertido.</p>
-            <div class="juego-precio">
-                <span class="precio-actual">$32.000</span>
-                <span class="sin-descuento">Sin descuento</span>
-            </div>
-        </div>
-    </div>
-
-    <div class="juego-card">
-        <div class="juego-image"><img src="img/clue.png" alt="Clue game"></div>
-        <div class="juego-info">
-            <h3 class="juego-titulo"></h3>
-            <p class="juego-descripcion">Resuelve el misterio del asesinato en esta emocionante aventura
-                detectivesca.</p>
-            <div class="juego-precio">
-                <span class="precio-actual">$30.000</span>
-                <span class="precio-original">$40.000</span>
-                <span class="descuento-badge">-25%</span>
-            </div>
-        </div>
-    </div>
-
-    <div class="juego-card">
-        <div class="juego-image"><img src="img/uno.png" alt="Uno game"></div>
-        <div class="juego-info">
-            <h3 class="juego-titulo">UNO</h3>
-            <p class="juego-descripcion">El juego de cartas más popular del mundo, perfecto para toda la
-                familia.</p>
-            <div class="juego-precio">
-                <span class="precio-actual">$15.000</span>
-                <span class="sin-descuento">Sin descuento</span>
-            </div>
-        </div>
     </div>
 </div>

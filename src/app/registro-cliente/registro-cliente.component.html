@@ -12,8 +12,10 @@
 
 
             <div class="form-container p-4">
-                <h2 class="text-center mb-4">Formulario de Registro</h2>
-
+                <!-- Título dinámico -->
+                <h2 class="text-center mb-4">
+                    {{ nombreUsuario ? 'Registro de: ' + nombreUsuario : 'Formulario de Registro' }}
+                </h2>
 
                 <form id="registroForm" novalidate>
                     <div class="row">
@@ -21,7 +23,14 @@
                         <div class="col-12 mb-3">
                             <label for="nombreCompleto" class="form-label required">Nombre
                                 Completo</label>
-                            <input type="text" class="form-control" id="nombreCompleto" required>
+                            <input
+                             type="text"  
+                             class="form-control"
+                             id="nombreCompleto"
+                             required 
+                             [(ngModel)]="nombreUsuario"
+                             name="nombreCompleto"
+                            >
                             <div class="invalid-feedback">
                                 Por favor ingrese su nombre completo.
                             </div>
